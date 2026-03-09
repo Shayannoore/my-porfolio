@@ -8,35 +8,40 @@ const projects = [
         description: 'Advanced speaker diarization combined with NLP for deep call insights and sentiment analysis.',
         tech: ['Python', 'Deep Learning', 'MSSQL'],
         icon: Cpu,
-        color: 'from-blue-500 to-indigo-600'
+        color: 'from-blue-500 to-indigo-600',
+        github: 'https://github.com/s4shayan/AI-Driven-Call-Auditing-System'
     },
     {
         title: 'React Native Expense Tracker',
         description: 'Comprehensive mobile solution for financial tracking with real-time analytics and backend synchronization.',
         tech: ['React Native', 'Django REST', 'MSSQL'],
         icon: Smartphone,
-        color: 'from-indigo-600 to-purple-600'
+        color: 'from-indigo-600 to-purple-600',
+        github: 'https://github.com/s4shayan/ExpenseTracker'
     },
     {
-        title: 'FastAPI CRUD Ecosystem',
-        description: 'High-performance backend API system designed for scalability and high-concurrency data operations.',
-        tech: ['FastAPI', 'SQLite'],
+        title: 'EduTrack-Pro',
+        description: 'EduTrack Pro is a comprehensive, cross-platform student management ecosystem designed to streamline administrative tasks and provide accessibility across web and mobile platforms.',
+        tech: ['Django', 'React', 'React Native', 'SQLite'],
         icon: Monitor,
-        color: 'from-purple-600 to-pink-600'
+        color: 'from-purple-600 to-pink-600',
+        github: 'https://github.com/s4shayan/EduTrack-Pro'
     },
     {
         title: 'Book Management App',
         description: 'Intuitive mobile application for library organization featuring offline storage and barcode scanning.',
         tech: ['React Native', 'SQLite'],
         icon: Smartphone,
-        color: 'from-pink-600 to-orange-500'
+        color: 'from-pink-600 to-orange-500',
+        github: 'https://github.com/s4shayan'
     },
     {
         title: 'Full-Stack Employee Management',
         description: 'A centralized workforce management ecosystem featuring a Django REST API, a React-based web dashboard, and an iOS/Android mobile application with image processing.',
         tech: ['Django', 'React', 'React Native', 'Expo', 'Bootstrap'],
         icon: Monitor,
-        color: 'from-emerald-500 to-teal-600'
+        color: 'from-emerald-500 to-teal-600',
+        github: 'https://github.com/s4shayan/EmployeeRecordManager'
     },
 ];
 
@@ -109,10 +114,15 @@ const Projects = () => {
                                     </div>
 
                                     <div className="flex items-center space-x-4">
-                                        <button className="flex items-center space-x-2 text-slate-900 font-bold hover:text-indigo-600 transition-colors">
+                                        <a
+                                            href={p.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center space-x-2 text-slate-900 font-bold hover:text-indigo-600 transition-colors"
+                                        >
                                             <Github className="w-5 h-5" />
                                             <span>Code</span>
-                                        </button>
+                                        </a>
                                         <button className="flex items-center space-x-2 text-slate-900 font-bold hover:text-indigo-600 transition-colors">
                                             <ExternalLink className="w-5 h-5" />
                                             <span>Demo</span>
