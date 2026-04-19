@@ -31,7 +31,7 @@ const Hero = () => {
                         </motion.div>
 
                         <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-                            Hi, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">Shayan Ali Noori</span>
+                            Hi, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600">Shayan Ali</span>
                         </h1>
 
                         <p className="text-xl md:text-2xl text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
